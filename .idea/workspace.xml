@@ -6,14 +6,14 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/FunctionCache.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440304722812" ignored="false" />
     <file path="/FetchReddit.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440308443831" ignored="false" />
-    <file path="/Category.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440305871509" ignored="false" />
+    <file path="/Category.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440318835826" ignored="false" />
     <file path="/XcomFunction.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440306031514" ignored="false" />
     <file path="/ProjectEulerFunction.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440305930291" ignored="false" />
-    <file path="/Parameter.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440317190615" ignored="false" />
+    <file path="/Parameter.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440319457265" ignored="false" />
     <file path="/Function.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440306936158" ignored="false" />
     <file path="/function_content.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440308709974" ignored="false" />
     <file path="/FunctionContentController.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440317378431" ignored="false" />
-    <file path="/MainController.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440314532462" ignored="false" />
+    <file path="/MainController.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440318728038" ignored="false" />
     <file path="/PerkReader.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440310567239" ignored="false" />
     <file path="/SteamOverlaySearch.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440313942698" ignored="false" />
     <file path="/fragment.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440313068351" ignored="false" />
@@ -30,6 +30,9 @@
     <file path="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/projecteuler/MultiplesOf3And5.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440313073596" ignored="false" />
     <file path="/main.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440314479638" ignored="false" />
     <file path="/Main.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440315405452" ignored="false" />
+    <file path="/SmartBuilderFunction.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440318818110" ignored="false" />
+    <file path="/AttributeCreater.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440319051092" ignored="false" />
+    <file path="/InterceptorStrategy.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1440325357737" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,42 +112,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/MainController.java">
+      <file leaf-file-name="InterceptorStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/InterceptorStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="94" selection-start="3765" selection-end="3765" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FunctionCache.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomPerkGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/RandomPerkGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="4" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+            <state line="55" column="51" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#754#762#0" expanded="true" />
-                <element signature="e#1512#1520#0" expanded="true" />
-                <element signature="e#1565#1573#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SteamOverlaySearch.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Math.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Math.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="421" column="25" selection-start="16323" selection-end="16323" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Echo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/Echo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SteamOverlaySearch.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/SteamOverlaySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="150" selection-start="4394" selection-end="4394" vertical-scroll-proportion="0.31658292">
+            <state line="134" column="0" selection-start="4557" selection-end="4802" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,63 +152,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="274" column="11" selection-start="11008" selection-end="11008" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parameter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Parameter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="101" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FetchReddit.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FetchReddit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/FetchReddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+            <state line="142" column="32" selection-start="5211" selection-end="5215" vertical-scroll-proportion="2.2529314">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1217#1225#0" expanded="true" />
                 <element signature="e#1281#1298#0" expanded="true" />
                 <element signature="e#1356#1373#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileChooser.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/jre/lib/ext/jfxrt.jar!/javafx/stage/FileChooser.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="15" selection-start="2920" selection-end="2920" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FunctionContentController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionContentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="87" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -223,10 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionCache.java" />
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Category.java" />
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/XcomFunction.java" />
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/ProjectEulerFunction.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/Function.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/FetchReddit.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/function_content.fxml" />
@@ -234,11 +183,15 @@
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/RandomPerkGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/ResultType.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/main.fxml" />
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/MainController.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Parameter.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionContentController.java" />
         <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/SteamOverlaySearch.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/MainController.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/SmartBuilderFunction.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Category.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/smartbuilder/AttributeCreater.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Parameter.java" />
+        <option value="$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/InterceptorStrategy.java" />
       </list>
     </option>
   </component>
@@ -418,6 +371,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="xcom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionsGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionsGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brutalbarbarian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartbuilder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,7 +727,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -760,7 +743,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15368196" sideWeight="0.6937639" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3062361" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3062361" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -853,55 +836,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/main.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="92" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/function_content.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="21" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/jre/lib/ext/jfxrt.jar!/javafx/scene/Node.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="22" selection-start="15087" selection-end="15087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/XcomFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/ProjectEulerFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="19" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
@@ -923,41 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="94" selection-start="3765" selection-end="3765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="87" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="101" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/FetchReddit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1217#1225#0" expanded="true" />
-            <element signature="e#1281#1298#0" expanded="true" />
-            <element signature="e#1356#1373#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/RandomPerkGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="4" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
@@ -970,11 +869,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/SteamOverlaySearch.java">
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="150" selection-start="4394" selection-end="4394" vertical-scroll-proportion="0.31658292">
+        <state line="44" column="37" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/app/FunctionContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="26" selection-start="4405" selection-end="4412" vertical-scroll-proportion="-3.64">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/ProjectEulerFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/interfaces/SmartBuilderFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/smartbuilder/AttributeCreater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="15" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/constants/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="4" selection-start="378" selection-end="429" vertical-scroll-proportion="0.36683416">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/Echo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/SteamOverlaySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="0" selection-start="4557" selection-end="4802" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="421" column="25" selection-start="16323" selection-end="16323" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/InterceptorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="51" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brutalbarbarian/functions/functions/xcom/FetchReddit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="32" selection-start="5211" selection-end="5215" vertical-scroll-proportion="2.2529314">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1217#1225#0" expanded="true" />
+            <element signature="e#1281#1298#0" expanded="true" />
+            <element signature="e#1356#1373#0" expanded="true" />
           </folding>
         </state>
       </provider>

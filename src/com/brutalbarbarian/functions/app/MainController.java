@@ -49,6 +49,8 @@ public class MainController implements Initializable{
                 tab.setContent(content);
 
                 tpFunctionTabs.getTabs().add(tab);
+                // Goto the tab we just created...
+                tpFunctionTabs.getSelectionModel().select(tab);
             }
         }
     }

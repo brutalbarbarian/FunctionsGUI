@@ -20,7 +20,11 @@ public enum Parameter {
 
     VideoPath,
     LabelRefPath,
-    Duration;
+    Duration,
+
+    InterceptorCount,
+    UFOCount,
+    ContinentSpread;
 
     public boolean isPath() {
         return (this == VideoPath) ||
