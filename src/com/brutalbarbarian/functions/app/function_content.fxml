@@ -1,0 +1,71 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<SplitPane fx:controller="com.brutalbarbarian.functions.app.FunctionContentController"
+           xmlns:fx="http://javafx.com/fxml" orientation="VERTICAL">
+    <BorderPane fx:id="bpInputPane">
+        <top>
+            <BorderPane>
+                <top>
+                    <ToolBar>
+                        <Button fx:id="btnCompute" text="_Compute" mnemonicParsing="true"
+                                onAction="#onCompute"/>
+                        <Button fx:id="btnRequestStop" text="Request _Stop" mnemonicParsing="true"
+                                onAction="#onRequestStop"/>
+                    </ToolBar>
+                </top>
+                <center>
+                    <GridPane>
+                        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Description"
+                                GridPane.hgrow="NEVER"/>
+                        <TextField GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0"
+                                   GridPane.fillWidth="true" GridPane.hgrow="ALWAYS"
+                                   editable="false" fx:id="tfDescription"/>
+                        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="URL"
+                               GridPane.hgrow="NEVER"/>
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"
+                                   GridPane.fillWidth="true" GridPane.hgrow="ALWAYS"
+                                   editable="false" fx:id="tfURL"/>
+                        <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="ExternalID"
+                               GridPane.hgrow="NEVER"/>
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="1"
+                                   GridPane.fillWidth="true" GridPane.hgrow="NEVER" prefColumnCount="4"
+                                   editable="false" fx:id="tfExternalID"/>
+                    </GridPane>
+                </center>
+            </BorderPane>
+        </top>
+        <center>
+            <SplitPane fx:id="spInput" orientation="HORIZONTAL">
+                <TextArea fx:id="taInput"/>
+                <GridPane fx:id="gpInputParams"/>
+                <!--<TableView fx:id="tvInputParams" editable="true">-->
+                    <!--<columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>-->
+                    <!--<columns>-->
+                        <!--<TableColumn text="Parameter">-->
+                            <!--<cellValueFactory>-->
+                                <!--<PropertyValueFactory property="paramName"/>-->
+                            <!--</cellValueFactory>-->
+                        <!--</TableColumn>-->
+                        <!--<TableColumn fx:id="tcValueColumn" text="Value" editable="true">-->
+                            <!--<cellValueFactory>-->
+                                <!--<PropertyValueFactory property="value"/>-->
+                            <!--</cellValueFactory>-->
+                        <!--</TableColumn>-->
+                    <!--</columns>-->
+                <!--</TableView>-->
+            </SplitPane>
+        </center>
+    </BorderPane>
+    <BorderPane>
+        <center>
+            <TextArea fx:id="taOutput" editable="false"/>
+        </center>
+        <bottom>
+            <ToolBar>
+                <Label text="Time in MS"/>
+                <TextField prefColumnCount="10" fx:id="tfDuration" editable="false"/>
+            </ToolBar>
+        </bottom>
+    </BorderPane>
+</SplitPane>
