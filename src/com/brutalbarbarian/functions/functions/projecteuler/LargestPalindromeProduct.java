@@ -4,6 +4,7 @@ import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.ProjectEulerFunction;
 import com.brutalbarbarian.utils.MathUtils;
 import com.brutalbarbarian.utils.StringUtils;
+import javafx.scene.control.TextArea;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ public class LargestPalindromeProduct implements ProjectEulerFunction{
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         int digits = Integer.parseInt(parameters.get(Parameter.Digits));
         int upperLimit = MathUtils.pow(10, digits) - 1; // e.g. 3 will give 999
         int lowerLimit = MathUtils.pow(10, digits - 1); // e.g. 3 will give 100

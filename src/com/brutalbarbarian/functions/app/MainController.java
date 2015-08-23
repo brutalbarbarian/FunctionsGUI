@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseButton;
+import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -17,6 +18,7 @@ import java.util.*;
 
 public class MainController implements Initializable{
     @FXML public TextArea taConsole;
+    public SplitPane spSplitter;
     @FXML Button btnAddFunction;
     @FXML TreeView tvFunctions;
     @FXML TextField tfSearch;
@@ -70,6 +72,8 @@ public class MainController implements Initializable{
         buildFunctionTree();
         displayFunctionTree("");
 
+        // Initialise the divider
+        spSplitter.setDividerPositions(0.3f);
 
         // Initialise tfSearch
         tfSearch.textProperty().addListener((o, s, s2) -> {

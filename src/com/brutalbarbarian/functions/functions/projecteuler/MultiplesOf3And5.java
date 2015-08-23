@@ -3,6 +3,7 @@ package com.brutalbarbarian.functions.functions.projecteuler;
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.ProjectEulerFunction;
 import com.brutalbarbarian.utils.MathUtils;
+import javafx.scene.control.TextArea;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -30,7 +31,7 @@ public class MultiplesOf3And5 implements ProjectEulerFunction {
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         int upperLimit = Integer.parseInt(parameters.get(Parameter.UpperLimit));
         int firstNumber = Integer.parseInt(parameters.get(Parameter.FirstNumber));
         int secondNumber = Integer.parseInt(parameters.get(Parameter.SecondNumber));

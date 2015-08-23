@@ -6,17 +6,27 @@ import com.brutalbarbarian.functions.interfaces.Function;
 import com.brutalbarbarian.utils.Console;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.Dragboard;
+import javafx.scene.input.TransferMode;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
+import javafx.stage.FileChooser;
+import org.jcodec.common.NIOUtils;
 
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -63,6 +73,7 @@ public class FunctionContentController implements Initializable {
 //        tvInputParams.setDisable(true);
         gpInputParams.setDisable(true);
         taInput.setDisable(true);
+        taOutput.clear();   // Should always clear output as first step...
 
         if (console != null) {
             console.clear();
@@ -72,17 +83,20 @@ public class FunctionContentController implements Initializable {
             try {
                 // Record start time for tracking how long the function took
                 startTime = System.currentTimeMillis();
-                final Object outputText = function.computeResult(inputParams, inputText);
+                final Object outputText = function.computeResult(inputParams, inputText, taOutput);
                 // Assuming it got up to this point... should be error-less
                 // Set the results
                 Platform.runLater(()-> {
                     if (outputText == null) {
-                        taOutput.setText("null");
+                        // do nothing
+//                        taOutput.setText("null");
                     } else {
                         switch (function.getResultType()) {
                             case String :
                                 taOutput.setText(outputText.toString());
                                 break;
+                            case Ignore:
+                                break;  // Do nothing
                             default :
                                 throw new UnknownResultType();
                         }
@@ -149,7 +163,24 @@ public class FunctionContentController implements Initializable {
                     tfValue.setText(defValue.toString());
                 }
 
-                gpInputParams.addRow(row, lName, tfValue);
+                if (param.isPath()) {
+                    Button bEllipse = new Button();
+                    bEllipse.setText("...");
+                    bEllipse.setOnAction(new EllipseHandler(tfValue, param));
+
+                    FileDragDropHandler dragDropHandler = new FileDragDropHandler(tfValue, param);
+
+                    tfValue.setOnDragOver(dragDropHandler);
+                    tfValue.setOnDragDropped(dragDropHandler);
+
+                    GridPane.setColumnSpan(tfValue, 1);
+                    GridPane.setHgrow(bEllipse, Priority.NEVER);
+                    gpInputParams.addRow(row, lName, tfValue, bEllipse);
+                } else {
+                    GridPane.setColumnSpan(tfValue, 2);
+                    gpInputParams.addRow(row, lName, tfValue);
+                }
+
                 row++;
             }
         }
@@ -165,6 +196,86 @@ public class FunctionContentController implements Initializable {
         if (function != null) {
             btnRequestStop.setDisable(true); // User has already requested once...
             function.requestStop();
+        }
+    }
+
+    private class FileDragDropHandler implements EventHandler<DragEvent> {
+        private final Parameter param;
+        private final TextField textField;
+
+        public FileDragDropHandler(TextField tfValue, Parameter param) {
+            this.textField = tfValue;
+            this.param = param;
+        }
+
+        @Override
+        public void handle(DragEvent event) {
+            if (event.getEventType() == DragEvent.DRAG_OVER) {
+                Dragboard db = event.getDragboard();
+                // Only accept 1 file at a time.
+                if (db.hasFiles() && db.getFiles().size() == 1) {
+                    // Check against allowed extensions
+                    File file = db.getFiles().get(0);
+                    if (file.isFile()) {
+                        List<FileChooser.ExtensionFilter> extensionFilters = new ArrayList<>();
+                        param.setupExtensions(extensionFilters);
+                        boolean accepted = false;
+                        for (FileChooser.ExtensionFilter filter : extensionFilters) {
+                            for (String ext : filter.getExtensions()) {
+                                // Assuming the ext is longer then 1 character long....
+                                String shortExt = ext.substring(1);
+                                if (file.getName().toLowerCase().endsWith(shortExt.toLowerCase())) {
+                                    accepted = true;
+                                }
+                            }
+                        }
+                        if(accepted) {
+                            event.acceptTransferModes(TransferMode.COPY);
+                        }
+                    }
+                } else {
+                    event.consume();
+                }
+            } else if (event.getEventType() == DragEvent.DRAG_DROPPED) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (db.hasFiles()) {
+                    success = true;
+                    String filePath = db.getFiles().get(0).getAbsolutePath();
+                    textField.setText(filePath);
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            }
+        }
+    }
+
+    private class EllipseHandler implements EventHandler<ActionEvent> {
+
+        private final Parameter param;
+        private final TextField textField;
+
+        public EllipseHandler(TextField textField, Parameter param) {
+            this.textField = textField;
+            this.param = param;
+        }
+
+        @Override
+        public void handle(ActionEvent actionEvent) {
+            FileChooser chooser = new FileChooser();
+            File initialDir = new File(textField.getText());
+            if (initialDir.exists()) {
+                if (initialDir.isFile()) {
+                    initialDir = initialDir.getParentFile();
+                }
+                chooser.setInitialDirectory(initialDir);
+            }
+            param.setupExtensions(chooser.getExtensionFilters());
+
+            File file = chooser.showOpenDialog(Main.getStage());
+            if (file != null) {
+                textField.setText(file.getAbsolutePath());
+            }
         }
     }
 }

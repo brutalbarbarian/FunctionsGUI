@@ -2,8 +2,8 @@ package com.brutalbarbarian.functions.functions.projecteuler;
 
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.ProjectEulerFunction;
+import javafx.scene.control.TextArea;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -28,7 +28,7 @@ public class SmallestMultiple implements ProjectEulerFunction {
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         int upperLimit = Integer.parseInt(parameters.get(Parameter.UpperLimit));
         int lowerLimit = upperLimit/2 + 1;
 

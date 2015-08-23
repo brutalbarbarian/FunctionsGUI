@@ -2,6 +2,7 @@ package com.brutalbarbarian.functions.functions.projecteuler;
 
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.ProjectEulerFunction;
+import javafx.scene.control.TextArea;
 
 import java.util.HashMap;
 
@@ -25,7 +26,7 @@ public class LargestProductInASeries implements ProjectEulerFunction {
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         // Any chains with 0 can be ignored...
         String[] items = text.split("0");
 

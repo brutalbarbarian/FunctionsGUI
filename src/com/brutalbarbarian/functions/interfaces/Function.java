@@ -3,6 +3,7 @@ package com.brutalbarbarian.functions.interfaces;
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.constants.ResultType;
 import com.brutalbarbarian.functions.constants.Category;
+import javafx.scene.control.TextArea;
 
 import java.util.HashMap;
 import java.util.List;
@@ -28,7 +29,7 @@ public interface Function {
         return "";
     }
 
-    public Object computeResult(HashMap<Parameter, String> parameters, String text);
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea);
 
     // Parameter related functions
     public default boolean requiresText() {

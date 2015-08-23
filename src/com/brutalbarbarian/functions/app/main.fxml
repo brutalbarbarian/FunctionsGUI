@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.TitledPane?>
-<SplitPane fx:controller="com.brutalbarbarian.functions.app.MainController"
+<SplitPane fx:controller="com.brutalbarbarian.functions.app.MainController" fx:id="spSplitter"
           xmlns:fx="http://javafx.com/fxml">
     <GridPane SplitPane.resizableWithParent="false">
         <columnConstraints>

@@ -2,6 +2,7 @@ package com.brutalbarbarian.functions.functions.xcom;
 
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.XcomFunction;
+import javafx.scene.control.TextArea;
 
 import java.util.*;
 
@@ -19,7 +20,7 @@ public class RandomPerkGenerator implements XcomFunction{
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         List<String> in = Arrays.asList(text.split("\n"));
         Set<String> perks = new HashSet<String>();
         for (String line : in) {

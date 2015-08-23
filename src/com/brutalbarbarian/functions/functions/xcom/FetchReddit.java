@@ -2,6 +2,7 @@ package com.brutalbarbarian.functions.functions.xcom;
 
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.XcomFunction;
+import javafx.scene.control.TextArea;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -36,7 +37,7 @@ public class FetchReddit implements XcomFunction {
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         requestStop = false;
 
         ArrayList<String> names = new ArrayList<String>();

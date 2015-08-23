@@ -2,6 +2,7 @@ package com.brutalbarbarian.functions.functions;
 
 import com.brutalbarbarian.functions.constants.Parameter;
 import com.brutalbarbarian.functions.interfaces.Function;
+import javafx.scene.control.TextArea;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ public class Echo implements Function {
     }
 
     @Override
-    public Object computeResult(HashMap<Parameter, String> parameters, String text) {
+    public Object computeResult(HashMap<Parameter, String> parameters, String text, TextArea outputArea) {
         for (Object o : parameters.entrySet()) {
             System.out.println(o.toString());
         }
