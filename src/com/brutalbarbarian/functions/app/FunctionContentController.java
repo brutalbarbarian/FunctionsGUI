@@ -18,8 +18,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
+import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
-import org.jcodec.common.NIOUtils;
 
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.File;
@@ -39,6 +39,10 @@ public class FunctionContentController implements Initializable {
     public TextField tfDuration;
     public GridPane gpInputParams;
     public Button btnRequestStop;
+    public Label lDescription;
+    public Label lURL;
+    public Label lExternalID;
+    public GridPane gpInfo;
     @FXML
     TextArea taInput, taOutput;
     @FXML
@@ -122,7 +126,10 @@ public class FunctionContentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        btnRequestStop.setDisable(true);
+        // Nicer font for mass in/out
+        taInput.setFont(Font.font("Consolas"));
+        taOutput.setFont(Font.font("Consolas"));
     }
 
     public void setConsole(Console console) {
@@ -131,6 +138,17 @@ public class FunctionContentController implements Initializable {
 
     public void setFunction(Function function) {
         this.function = function;
+
+        if (function.getDescription().isEmpty()) {
+            lDescription.setVisible(false);
+            tfDescription.setVisible(false);
+        }
+        if (function.getURL().isEmpty()) {
+            lURL.setVisible(false);
+            tfURL.setVisible(false);
+            lExternalID.setVisible(false);
+            tfExternalID.setVisible(false);
+        }
 
         // Gotta remove instead of simply hiding otherwise splitter still remains
         if (!(function.requiresText() | function.requiresParameters())) {

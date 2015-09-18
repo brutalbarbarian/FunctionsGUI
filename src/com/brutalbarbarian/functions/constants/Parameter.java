@@ -24,11 +24,27 @@ public enum Parameter {
 
     InterceptorCount,
     UFOCount,
-    ContinentSpread;
+    ContinentSpread,
+
+    TBOFittingPath,
+    AttributeName,
+    FieldType,
+    FittingClass,
+
+    IsLength,
+
+    CSVFile,
+    FittingIDColumnName,
+    LanguageID,
+    TranslatedFittingNameColumn,
+    TranslatedDescriptionColumn,
+    ManufacturerIDColumn;
 
     public boolean isPath() {
         return (this == VideoPath) ||
-                (this == LabelRefPath);
+                (this == LabelRefPath) ||
+                (this == TBOFittingPath) ||
+                (this == CSVFile);
     }
 
     public void setupExtensions(List<FileChooser.ExtensionFilter> extensionFilters) {
@@ -38,6 +54,10 @@ public enum Parameter {
             extensionFilters.add(new FileChooser.ExtensionFilter("PNG", "*.png"));
             extensionFilters.add(new FileChooser.ExtensionFilter("JPEG", Arrays.asList("*.jpeg", "*.jpg")));
             extensionFilters.add(new FileChooser.ExtensionFilter("BMP", "*.bmp"));
+        } else if (this == TBOFittingPath) {
+            extensionFilters.add(new FileChooser.ExtensionFilter("PAS", "*.pas"));
+        } else if (this == CSVFile) {
+            extensionFilters.add(new FileChooser.ExtensionFilter("CSV", "*.csv"));
         }
     }
 }

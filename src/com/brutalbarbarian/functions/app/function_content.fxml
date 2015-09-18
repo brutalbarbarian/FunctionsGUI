@@ -15,19 +15,19 @@
                     </ToolBar>
                 </top>
                 <center>
-                    <GridPane>
+                    <GridPane fx:id="gpInfo">
                         <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Description"
-                                GridPane.hgrow="NEVER"/>
+                                GridPane.hgrow="NEVER" fx:id="lDescription"/>
                         <TextField GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0"
                                    GridPane.fillWidth="true" GridPane.hgrow="ALWAYS"
                                    editable="false" fx:id="tfDescription"/>
                         <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="URL"
-                               GridPane.hgrow="NEVER"/>
+                               GridPane.hgrow="NEVER" fx:id="lURL"/>
                         <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"
                                    GridPane.fillWidth="true" GridPane.hgrow="ALWAYS"
                                    editable="false" fx:id="tfURL"/>
                         <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="ExternalID"
-                               GridPane.hgrow="NEVER"/>
+                               GridPane.hgrow="NEVER" fx:id="lExternalID"/>
                         <TextField GridPane.columnIndex="3" GridPane.rowIndex="1"
                                    GridPane.fillWidth="true" GridPane.hgrow="NEVER" prefColumnCount="4"
                                    editable="false" fx:id="tfExternalID"/>
@@ -59,7 +59,7 @@
     </BorderPane>
     <BorderPane>
         <center>
-            <TextArea fx:id="taOutput" editable="false"/>
+            <TextArea fx:id="taOutput"/>
         </center>
         <bottom>
             <ToolBar>

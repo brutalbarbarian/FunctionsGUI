@@ -87,6 +87,8 @@ public class MainController implements Initializable{
         PrintStream ps = new PrintStream(console);
         System.setOut(ps);
         System.setErr(ps);
+
+        Main.postInitialise(this);
     }
 
     HashMap<String, TreeItem> treeItemCategories;
