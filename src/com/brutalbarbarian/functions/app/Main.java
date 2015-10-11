@@ -10,6 +10,7 @@ import javafx.stage.Window;
 public class Main extends Application {
     private static final String cachePackagePath = "com.brutalbarbarian.functions.functions";
     private static Stage stage;
+    private static Main appInstance;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -25,6 +26,7 @@ public class Main extends Application {
     public void init() throws Exception {
         super.init();
 
+        appInstance = this;
         FunctionCache.initialiseCache(cachePackagePath);
     }
 
@@ -34,5 +36,13 @@ public class Main extends Application {
 
     public static Window getStage() {
         return stage;
+    }
+
+    protected void doPostInitialise(MainController mainController) {
+        // Override to do things
+    }
+
+    public static void postInitialise(MainController mainController) {
+        appInstance.doPostInitialise(mainController);
     }
 }

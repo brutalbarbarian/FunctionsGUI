@@ -79,6 +79,10 @@ public class FunctionCache {
         return classes;
     }
 
+    public static void addFunction(Function function) {
+        getCache().functions.add(function);
+    }
+
     private static FunctionCache cache;
     public static FunctionCache getCache() {
         if (cache == null) {
